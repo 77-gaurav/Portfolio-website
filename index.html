@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="logo">Gaurav</h1>
+
+        <!-- Hamburger Button (Visible in Mobile) -->
+        <button id="menu-toggle" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span id="animated-text" class="highlight">Gaurav Sareriya</span></h1>
+
+                <h2>Frontend Web Developer</h2>
+                <p>I craft modern and responsive web interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="hero-image">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jtbfg2nb.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+            </div>
+        </section>
+
+        <!-- About section -->
+
+        <section id="about" class="about-section">
+            <h2 data-aos="zoom-in" class="about-heading">About Me</h2>
+
+            <div class="about-container">
+                <div class="about-left" data-aos="fade-right">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_qp1q7mct.json"
+                        background="transparent" speed="1" loop autoplay></lottie-player>
+                </div>
+
+                <div class="about-right" data-aos="zoom-in">
+                    <p>
+                        I’m a passionate and self-motivated Frontend Developer with a strong foundation in HTML5, CSS3,
+                        JavaScript,
+                        and UI frameworks. I enjoy learning modern tools and building clean, responsive websites with
+                        real-world impact.
+                    </p>
+                    <div class="about-badges">
+                        <span>🚀 Fast Learner</span>
+                        <span>💡 Problem Solver</span>
+                        <span>🧠 Curious Mind</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+        <section class="skills-section" id="skills">
+            <h2 data-aos="zoom-in" class="skills-heading">Skills</h2>
+
+            <div id="skills-carousel" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                            <p>HTML5</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                            <p>CSS3</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+                            <p>Bootstrap</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg">
+                            <p>Tailwind</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                            <p>React</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                            <p>Git</p>
+                        </li>
+                        <li class="splide__slide"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                            <p>GitHub</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 data-aos="zoom-in" class="contact-heading">Contact Me</h2>
+
+            <div class="contact-container">
+                <form id="contact-form" action="https://formsubmit.co/gauravsareriya0204@gmail.com" method="POST">
+                    <input type="text" name="user_name" placeholder="Your Name" required />
+                    <input type="email" name="user_email" placeholder="Your Email" required />
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:gauravsareriya0204@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+91 9104093860" title="Call"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/77-gaurav" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/gauravsareriya" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/77__gaurav" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="copyright">© 2025 Gaurav Sareriya. All rights reserved.</p>
+
+            <button onclick="scrollToTop()" class="scroll-top-btn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
