@@ -51,17 +51,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // 🎠 Splide Carousel Init
     new Splide('#skills-carousel', {
         type: 'loop',
-        perPage: 5,
+        perPage: 4,
+        gap: '1rem',
         autoplay: true,
         interval: 3500,
-        speed: 1500,
+        speed: 2000,
         pauseOnHover: false,
         pagination: false,
         arrows: false,
         breakpoints: {
-            1024: { perPage: 4 },
-            768: { perPage: 3 },
-            480: { perPage: 2 }
+            1024: { perPage: 3 },
+            768: { perPage: 2 },
+            480: { perPage: 1 }
         }
     }).mount();
 
@@ -80,4 +81,16 @@ contactForm?.addEventListener('submit', function () {
     setTimeout(() => {
         this.reset();
     }, 200);
+});
+
+
+// Scroll animation for project section
+window.addEventListener('scroll', () => {
+    const section = document.querySelector('.projects-section');
+    const sectionTop = section.getBoundingClientRect().top;
+    const triggerPoint = window.innerHeight / 1.3;
+
+    if (sectionTop < triggerPoint) {
+        section.classList.add('show');
+    }
 });
