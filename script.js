@@ -49,22 +49,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // 🎠 Splide Carousel Init
-    new Splide('#skills-carousel', {
+    const skillsSlider = new Splide('#skills-carousel', {
         type: 'loop',
-        perPage: 4,
+        perPage: 5,
         gap: '1rem',
-        autoplay: true,
-        interval: 3500,
-        speed: 2000,
-        pauseOnHover: false,
-        pagination: false,
         arrows: false,
+        pagination: false,
+        pauseOnHover: false,
+        autoScroll: {
+            speed: 1,
+        },
         breakpoints: {
-            1024: { perPage: 3 },
-            768: { perPage: 2 },
-            480: { perPage: 1 }
+            1024: { perPage: 4 },
+            768: { perPage: 3 },
+            480: { perPage: 2 }
         }
-    }).mount();
+    });
+
+    // Use the Auto Scroll plugin
+    skillsSlider.mount({ AutoScroll: window.splide.Extensions.AutoScroll });
+
 
     // 🧠 AOS Animate
     AOS.init({
